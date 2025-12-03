@@ -26,8 +26,8 @@ pipeline {
                 echo "Verificando si zip está instalado..."
                 if ! command -v zip >/dev/null 2>&1; then
                   echo "zip NO está instalado. Instalando..."
-                  sudo apt-get update
-                  sudo apt-get install -y zip
+                  apt-get update
+                  apt-get install -y zip
                 else
                   echo "zip ya está instalado."
                 fi
