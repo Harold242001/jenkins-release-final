@@ -33,7 +33,7 @@ pipeline {
                     }
                 }
 
-                stage('Google')
+                stage('Google') {
                     steps {
                         sh 'echo "Ejecutando pruebas en Edge..."'
                     }
