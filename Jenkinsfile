@@ -1,11 +1,6 @@
 pipeline {
     agent any
     
-    // ACTIVACIÓN AUTOMÁTICA
-    //triggers {
-        //pollSCM('* * * * *')   // Jenkins revisa cambios cada minuto 
-   // }
-
     stages {
 
         stage('Checkout') {
@@ -33,11 +28,6 @@ pipeline {
                     }
                 }
 
-                stage('Google') {
-                    steps {
-                        sh 'echo "Ejecutando pruebas en Edge..."'
-                    }
-                }
             }
         }
 
