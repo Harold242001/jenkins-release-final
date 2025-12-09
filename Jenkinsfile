@@ -2,9 +2,9 @@ pipeline {
     agent any
     
     // ACTIVACIÓN AUTOMÁTICA
-    triggers {
+    //triggers {
         //pollSCM('* * * * *')   // Jenkins revisa cambios cada minuto 
-    }
+   // }
 
     stages {
 
