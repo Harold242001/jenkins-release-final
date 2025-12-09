@@ -20,7 +20,7 @@ pipeline {
             }
         }
 
-        stage('Tests Paralelos') {
+        stage('Tests') {
             parallel {
                 stage('Firefox') {
                     steps {
@@ -32,12 +32,6 @@ pipeline {
                         sh 'echo "Ejecutando pruebas en Edge..."'
                     }
                 }
-            }
-        }
-
-        stage('Test') {
-            steps {
-                sh 'echo "Ejecutando pruebas..."'
             }
         }
 
