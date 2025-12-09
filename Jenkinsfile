@@ -3,7 +3,7 @@ pipeline {
     
     // ACTIVACIÓN AUTOMÁTICA
     triggers {
-        pollSCM('* * * * *')   // Jenkins revisa cambios cada minuto
+        //pollSCM('* * * * *')   // Jenkins revisa cambios cada minuto
     }
 
     stages {
