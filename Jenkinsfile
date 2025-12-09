@@ -32,6 +32,12 @@ pipeline {
                         sh 'echo "Ejecutando pruebas en Edge..."'
                     }
                 }
+
+                stage('Google')
+                    steps {
+                        sh 'echo "Ejecutando pruebas en Edge..."'
+                    }
+                }
             }
         }
 
