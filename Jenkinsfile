@@ -28,6 +28,11 @@ pipeline {
                     }
                 }
 
+                stage('Opera Browser') {
+                    steps {
+                        sh 'echo "Ejecutando pruebas en Opera Browser ..."'
+                    }
+                }
             }
         }
 
