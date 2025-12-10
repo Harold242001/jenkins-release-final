@@ -3,6 +3,13 @@ pipeline {
     
     stages {
 
+        stage('Webhook Trigger Check') {
+            steps {
+                sh 'echo " Pipeline iniciado automáticamente por Webhook de GitHub"'
+                sh 'date'
+            }
+        }
+
         stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/Harold242001/jenkins-release-final.git'
