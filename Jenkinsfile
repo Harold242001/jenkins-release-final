@@ -3,12 +3,7 @@ pipeline {
     
     stages {
 
-        stage('Webhook Trigger Check') {
-            steps {
-                sh 'echo " Pipeline iniciado automáticamente por Webhook de GitHub"'
-                sh 'date'
-            }
-        }
+        
 
         stage('Checkout') {
             steps {
