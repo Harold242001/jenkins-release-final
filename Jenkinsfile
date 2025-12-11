@@ -58,6 +58,8 @@ pipeline {
         success {
             archiveArtifacts artifacts: 'release.zip', fingerprint: true
             echo "Release generado exitosamente."
+            echo "EXAMEN FINAL."
+
         }
         failure {
             echo "Falló el release."
